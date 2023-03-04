@@ -1,0 +1,269 @@
+Código hola
+#include<iostream>
+using namespace std;
+int main () {
+    cout<<"hola polinesios"<<endl;
+    return 0;
+    }
+
+Código hola, 5+6
+#include<iostream>
+float x=0;
+
+int main(){
+    x=5+6;
+    std::cout<<"hola polinesios"<<std::endl;
+    std::cout<<x<<std::endl;
+    return 0;
+}
+
+Código distancia entre 2 puntos
+#include<iostream>
+using namespace std;
+int main(){
+    float x1=5;
+    float x2=-4;
+    float y1=5;
+    float y2=2;
+    float P1P2=0;
+    float z1=0;
+    float z2=0;
+    P1P2= sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1))+((z2-z1)*(z2-z1)));
+    cout<<P1P2;
+}
+
+Código producto entre 2 vectores
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    float U1,U2,U3,V1,V2,V3,W;
+    U1=1;
+    U2=2;
+    U3=3;
+    V1=4;
+    V2=5;
+    V3=6;
+    W=(U1*V1)+(U2*V2)+(U3*V3);
+    cout <<W<<endl;
+}
+
+Código de coordenadas
+#include <iostream>
+#include <cmath>
+using namespace std; 
+
+float x=0;
+float y=7.07;
+float z=7.07;
+float r=0;
+float teta=0;
+float phy=0;
+int main (){
+    
+r=sqrt((x*x)+(y*y)+(z*z));
+teta=atan(y/x);
+phy=acos(z/(sqrt((x*x)+(y*y)+(z*z))));
+cout<<"("<<r<<","<<teta<<","<<phy<<")";
+return 0;
+}
+
+Código coordenadas esféricas rectas
+#include<iostream>
+#include<cmath>
+#define PI 3.14159
+
+using namespace std;
+
+int main(){
+//definimos las variables
+    double teta=0;
+    double phy=0;
+    double r=0;
+    double x=0;
+    double y=0;
+    double z=0;
+//ecuaciones
+    x=r*sin(phy)*cos(teta);
+    y=r*sin(phy)*cos(teta);
+    z=r*sin(phy);
+    
+    cout<<"("<<x<<","<<y<<","<<z<<")";
+    return 0;
+}
+
+Código 3D[1]
+#include<iostream>
+#include<cmath>
+using namespace std; 
+int main (){
+    float x1=3;
+    float x2=(-7);
+    float y1=(-5);
+    float y2=6;
+    float z1=2;
+    float z2=(-4);
+    float p1p2=0;
+    p1p2=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1))+((z2-z1)*(z2-z1)));
+    cout<<p1p2<<endl;
+    return 0;
+}
+
+Código 2D[1]
+#include<iostream>
+#include<cmath>
+using namespace std; 
+int main (){
+    float x1=7;
+    float x2=6;
+    float y1=-7;
+    float y2=6;
+    float p1p2=0;
+    p1p2=sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
+    cout<<p1p2<<endl;
+    return 0;
+}
+
+Código DE PI A RADIANES
+#include <iostream>
+#define PI 3.141592654
+using namespace std;
+float gra=0;
+float x=0.22*PI;
+int main(){
+	gra=(x*360)/(2*PI);
+	cout<<gra<<endl;
+	return 0;
+
+Código De radianes a grados
+#include <iostream>
+#define PI 3.141592654
+using namespace std;
+float gra=300;
+float rad=0;
+int main(){
+	rad=(gra*PI)/180;
+	cout<<rad<<endl;
+	return 0;
+}
+
+CODIGO DE ESF_ RECT
+#include <iostream>
+#include<cmath>
+#define PI 3.1416
+using namespace std;
+int main (){
+    float teta=90;
+    float phy=45;
+    float r=10;
+    float x=0;
+    float y=0;
+    float z=0;
+    
+    phy=phy*PI/180;
+    teta=teta*PI/180;
+    x=r*sin(phy)*cos(teta);
+    y=r*sin(phy)*sin(teta);
+    z=r*cos(phy);
+    
+    cout<<"("<<x<<","<<y<<","<<z<<")";
+    return 0;
+    }
+
+CODIGO DE PRODUCTO ESCALAR ENTRE 2 VECTORES
+#include <iostream>
+#include<cmath>
+#define PI 3.1416
+using namespace std;
+int main (){
+    float u1, u2, u3, v1, v2, v3, w, teta, mu, mv;
+    u1=1;
+    u2=2;
+    u3=3;
+    v1=4;
+    v2=5;
+    v3=6;
+    w=(u1)*(v1)+(u2)*(v2)+(u3)*(v3);
+    cout <<w<<endl;
+    mu=sqrt((u1*u1)+(u2*u2)+(u3*u3));
+    mv=sqrt((v1*v1)+(v2*v2)+(v3*v3));
+    teta=acos(w/(mu*mv));
+    cout<<mu<<endl;
+    cout<<mv<<endl;
+    cout<<teta<<endl;
+}
+
+CODIGO PUNTO MEDIO
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main (){
+    float x1=5;
+    float y1=5;
+    float z1=05;
+    float x2=-1;
+    float y2=-2;
+    float z2=-3;
+    float xp=0;
+    float yp=0;
+    float zp=0;
+    xp=(x1+x2)/2;
+    yp=(y1+y2)/2;
+    zp=(z1+z2)/2;
+    cout<<"("<<xp<<","<<yp<<","<<zp<<")"<<endl;
+    return 0;
+}
+
+Codigo RECT- ESF
+#include <iostream>
+#include<cmath>
+#define PI 3.1416
+using namespace std;
+int main (){
+    float teta=0;
+    float phy=0;
+    float r=10;
+    float x=0;
+    float y=0;
+    float z=0;
+    
+    
+   r=(sqrt((x*x)+(y*y)+(z*z)));
+   teta=atan(x/y);
+    phy=acos(z/(sqrt((x*x)+(y*y)+(z*z))));
+    cout<<"("<<r<<","<<teta<<","<<phy<<")";
+    return 0;
+    }
+
+CODIGO RECT- POL
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main (){
+    float x=1;
+    float y=-2;
+    float teta=0;
+    float r=0;
+    teta=atan(x/y);
+    r=sqrt((x*x)+(y*y));
+    cout<<"("<<r<<","<<teta<<")"<<endl;
+    return 0;
+}
+
+CODIGO PRODUCTO ESCALAR
+#include <iostream>
+#include<cmath>
+#define PI 3.1416
+using namespace std;
+int main (){
+    float u1, u2, u3, v1, v2, v3, w; 
+    u1=1;
+    u2=2;
+    u3=3;
+    v1=4;
+    v2=5;
+    v3=6;
+    w=(u1)*(v1)+(u2)*(v2)+(u3)*(v3);
+    cout <<w<<endl;
+}
+
